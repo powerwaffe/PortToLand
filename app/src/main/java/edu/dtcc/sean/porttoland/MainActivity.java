@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Create onClick listener
         Button createString = (Button) findViewById(R.id.btnCreateString);
         createString.setOnClickListener(this);
     }
@@ -21,9 +22,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v)
     {
-        TextView textView = (TextView) findViewById(R.id.tvDisplayString);
+        // Create textView objects
+        TextView textView1 = (TextView) findViewById(R.id.tvDisplayString);
         TextView textView2 = (TextView) findViewById(R.id.editText);
-        textView.setText(textView2.getText());
+
+        // Set text from textView2 to textView1
+        textView1.setText(textView2.getText());
 
     }
 }
