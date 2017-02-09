@@ -10,14 +10,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="edu.dtcc.sean.porttoland.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Enter A Random String Below"
-        android:layout_marginTop="57dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,19 +21,27 @@
         android:layout_centerHorizontal="true" />
 
     <TextView
-        android:text="String Will Display Here"
+        android:text="Celsius Will Display Here"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/tvDisplayString" />
+        android:id="@+id/tvDisplayCelsius" />
 
     <Button
-        android:text="Create String"
+        android:text="Convert To Celsius"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:id="@+id/btnCreateString"
-        android:layout_below="@+id/tvDisplayString"
+        android:id="@+id/btnCalculateFahrenheit"
+        android:layout_below="@+id/tvDisplayCelsius"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter FahrenheitBelow"
+        android:layout_marginTop="57dp"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>
