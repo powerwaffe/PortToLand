@@ -11,47 +11,42 @@
     android:background="#404040"
     tools:context="edu.dtcc.sean.porttoland.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/enter_fahrenheit_below"
-        android:textColor="#ffffff"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textStyle="normal|bold"
-        android:textSize="14sp" />
-
-    <Button
-        android:text="@string/convert_to_celsius"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnCalculateFahrenheit"
-        android:layout_below="@+id/editText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="64dp" />
-
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
         android:id="@+id/editText"
-        android:layout_marginTop="24dp"
-        android:layout_alignParentLeft="true"
         android:textColor="#ffffff"
-        android:layout_alignParentStart="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:text="@string/convert_to_celsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCalculateFahrenheit"
+        android:layout_marginTop="64dp"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_fahrenheit_below"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textStyle="normal|bold" />
 
     <TextView
         android:text="@string/celsius_will_display_here"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tvDisplayCelsius"
-        android:layout_marginTop="81dp"
-        android:textStyle="normal|bold"
-        android:layout_below="@+id/btnCalculateFahrenheit"
-        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:textColor="#ffffff"
-        android:layout_alignParentStart="true" />
+        android:textStyle="normal|bold" />
 </RelativeLayout>
