@@ -9,8 +9,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.Locale;
-
 public class MainActivity extends AppCompatActivity implements View.OnClickListener
 {
     // Define key for the bundle
@@ -46,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             // Restore the save data
             celsius = savedInstanceState.getDouble(CELSIUS_KEY);
 
-            tvDisplayCelsius.setText(Double.toString(celsius));
+            tvDisplayCelsius.setText(String.format("%.2f", celsius));
             Log.d("SEAN", "bundle restored");
         }
     }
@@ -81,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
            Toast.makeText(MainActivity.this, "Invalid Input", Toast.LENGTH_LONG).show();
 
            // Clear fields
-           tvDisplayCelsius.setText("");
+           tvDisplayCelsius.setText("0.0");
        }
     }
 }

@@ -3,4 +3,5 @@
     <string name="celsius_will_display_here">Celsius Will Display Here</string>
     <string name="convert_to_celsius">Convert To Celsius</string>
     <string name="enter_fahrenheit_below">Enter Fahrenheit Below</string>
+    <string name="_0_0">0.0</string>
 </resources>
